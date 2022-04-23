@@ -918,7 +918,6 @@ contract FreedomFinance is ERC20Detailed, Ownable, MinterRole {
             .div(_gonsPerFragment)
             .mul(liquidityFee.add(sellFeeLiquidityAdded))
             .div(totalSellFee);
-
         uint256 buyFeeAmountToLiquidityWithExcess = buyFeeAmountToLiquidityWithoutExcess
             .add(_excessBuyFeeLiquidityBalance);
         uint256 sellFeeAmountToLiquidityWithExcess = sellFeeAmountToLiquidityWithoutExcess
