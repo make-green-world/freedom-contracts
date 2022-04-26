@@ -165,8 +165,8 @@ contract PreSale is Ownable {
     }
 
     function deposit() public payable checkIfPaused {
-        require(block.timestamp > startTime, 'Sale has not started');
-        require(block.timestamp < endTime, 'Sale has ended');
+        require(block.timestamp > startTime, 'Sale has not started.');
+        require(block.timestamp < endTime, 'Sale has ended.');
         require(
                 _totalPaid[msg.sender].add(msg.value) <= maxETHLimit
                 && _totalPaid[msg.sender].add(msg.value) >= minETHLimit,
