@@ -616,7 +616,7 @@ contract FreedomFinance is ERC20Detailed, Ownable, MinterRole {
     InterfaceLP public pairContract;
 
     bool public initialDistributionFinished = false;
-    bool public swapEnabled = true;
+    bool public swapEnabled = false;
     bool public autoRebase = false;
 
     mapping(address => bool) allowTransfer;
