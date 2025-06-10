@@ -635,7 +635,7 @@ contract FreedomFinance is ERC20Detailed, Ownable, MinterRole {
     uint256 private constant DECIMALS = 18;
     uint256 private constant MAX_UINT256 = ~uint256(0);
     uint256 private constant INITIAL_FRAGMENTS_SUPPLY = 3 * 10**9 * 10**DECIMALS;
-    uint256 private constant MAX_BUY_FEE = 10;
+    uint256 private constant MAX_BUY_FEE = 15;
     uint256 private constant MAX_SELL_FEE = 20;
 
     uint256 public liquidityFee = 3;
