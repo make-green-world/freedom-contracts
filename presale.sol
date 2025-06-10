@@ -93,7 +93,7 @@ contract PreSale is Ownable {
     IERC20 public PTOKEN = IERC20(0x8b48080849D1767857c430D5713fdc358Dd1A8D0);
     address public Recipient = 0x24fc455Be96dB7115b51eA04975b6FA91849c08a;
 
-    uint256 public tokenRatePerEth = 50; // 50 * (10 ** decimals) PTOKEN per eth
+    uint256 public tokenRatePerEth = 100; // 100 * (10 ** decimals) PTOKEN per eth
 
     uint256 public minETHLimit = 0.5 ether;
     uint256 public maxETHLimit = 30 ether;
