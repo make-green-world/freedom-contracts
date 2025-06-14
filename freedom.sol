@@ -657,7 +657,7 @@ contract FreedomFinance is ERC20Detailed, Ownable, MinterRole {
     uint256 public feeDenominator = 100;
     uint256 public rewardYield = 35477800;
     uint256 public rewardYieldDenominator = 100000000000;
-    uint256 public rebaseFrequency = 1800;
+    uint256 public rebaseFrequency = 3600;
     uint256 public nextRebase = block.timestamp + rebaseFrequency;
 
     address constant DEAD = 0x000000000000000000000000000000000000dEaD;
