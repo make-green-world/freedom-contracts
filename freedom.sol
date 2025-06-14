@@ -669,7 +669,7 @@ contract FreedomFinance is ERC20Detailed, Ownable, MinterRole {
     address public maintenanceValueReceiver;
     address public stableCoin;
 
-    uint256 targetLiquidity = 50;
+    uint256 targetLiquidity = 100;
     uint256 targetLiquidityDenominator = 100;
 
     IJoeRouter public router;
